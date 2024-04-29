@@ -1,6 +1,7 @@
-﻿System.Console.Write($"Введите элементы исходного массива через запятую в одну строчку без пробелов и кавычек(допускаютя цифры, символы латинского алфавита и знаки): ");
+﻿int elemLen = 3;
+System.Console.Write($"Введите элементы исходного массива через запятую в одну строчку без пробелов и кавычек(допускаютя цифры, символы латинского алфавита и знаки): ");
 string word = Console.ReadLine();
-if (word.Length >= 3)
+if (word.Length >= elemLen)
 {
     string[] CreateArray()      // Создаем массив из введенный элементов.
     {
@@ -32,14 +33,14 @@ if (word.Length >= 3)
         int count = 0;
         for (int i = 0; i < array.Length; i++)
         {
-            if (array[i].Length <= 3)
+            if (array[i].Length <= elemLen)
             { count++; }                        //Находим длинну результ. массива.
         }
-        string[] result = new string[count];    //Создаем массив.
+        string[] result = new string[count];    //Создаем результирующий массив.
         int j = 0;
         for (int i = 0; i < array.Length; i++)
         {
-            if (array[i].Length <= 3)
+            if (array[i].Length <= elemLen)
             {
                 result[j] = array[i]; //Заполняем массив.
                 j++;
@@ -60,5 +61,5 @@ if (word.Length >= 3)
 }
 else
 {
-    System.Console.WriteLine("Введено меньше 3 символов.");
+    System.Console.WriteLine($"Введено меньше {elemLen} символов.");
 }
