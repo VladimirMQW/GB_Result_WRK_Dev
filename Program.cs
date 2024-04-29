@@ -34,7 +34,9 @@ if (word.Length >= elemLen)
         for (int i = 0; i < array.Length; i++)
         {
             if (array[i].Length <= elemLen)
-            { count++; }                        //Находим длинну результ. массива.
+            {
+                count++;
+            }                        //Находим длинну результ. массива.
         }
         string[] result = new string[count];    //Создаем результирующий массив.
         int j = 0;
