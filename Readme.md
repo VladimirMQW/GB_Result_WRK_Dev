@@ -39,5 +39,8 @@
 Диаграмма метода OutArray.
 ![OutArray](itog_OutArray.jpg)
 
-Тест.
+Тест1.
 ![Тест1](test1.jpg)
+
+Тест3.
+![Тест3](test3.jpg)
