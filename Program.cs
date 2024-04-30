@@ -1,7 +1,7 @@
 ﻿int elemLen = 3;
 System.Console.Write($"Введите элементы исходного массива через запятую в одну строчку без пробелов и кавычек(допускаютя цифры, символы латинского алфавита и знаки): ");
 string word = Console.ReadLine();
-if (word.Length >= elemLen)
+if (word.Length > 0)
 {
     string[] CreateArray()      // Создаем массив из введенный элементов.
     {
@@ -63,5 +63,5 @@ if (word.Length >= elemLen)
 }
 else
 {
-    System.Console.WriteLine($"Введено меньше {elemLen} символов.");
+    System.Console.WriteLine($"Введите несколько символов.");
 }
